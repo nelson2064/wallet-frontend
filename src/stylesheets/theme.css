@@ -1,0 +1,70 @@
+:root {
+  --primary: #2B2E3B; /* Dark indigo */
+  --secondary: #69307C; /* Dark purple */
+  --tertiary: #FF5C8E; /* Pink */
+}
+
+/* Linear gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Updated background styles with animation */
+.bg-primary {
+  background: linear-gradient(to right, var(--primary), var(--secondary)) !important;
+  background-size: 200% 200%;
+  animation: gradientAnimation 8s ease-in-out infinite;
+}
+
+.bg-secondary {
+  background: var(--secondary) !important;
+  
+}
+
+.bg-tertiary {
+  background: linear-gradient(to right, var(--secondary), var(--tertiary)) !important;
+  background-size: 200% 200%;
+  animation: gradientAnimation 8s ease-in-out infinite;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+.text-tertiary {
+  color: var(--tertiary) !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-black {
+  color: #000 !important;
+}
+
+.success-bg {
+  background-color: #FF5C8E !important; /* Pink */
+  color: white !important;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.error-bg {
+  background-color: #69307C !important; /* Dark purple */
+  color: white !important;
+  padding: 10px;
+  border-radius: 3px;
+}

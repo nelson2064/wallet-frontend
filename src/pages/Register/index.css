@@ -1,0 +1,130 @@
+
+  /* Custom styles for Register form */
+.register-bg {
+    background: linear-gradient(135deg, #3498db, #2ecc71); /* You can adjust the gradient colors as needed */
+    animation: gradientAnimation 10s infinite linear; /* Add a gradient animation */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160vh;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .register-card {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 500px; /* Increased width */
+    text-align: center;
+    animation: cardAnimation 1s ease-in-out; /* Add a card animation */
+  }
+  
+  @keyframes cardAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .register-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+    animation: titleAnimation 1s ease-in-out; /* Add a title animation */
+  }
+  
+  @keyframes titleAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .register-login-link {
+    font-size: 16px;
+    color: #333333; /* Dark gray text */
+    text-decoration: underline;
+    cursor: pointer;
+    animation: linkAnimation 1s ease-in-out; /* Add a link animation */
+  }
+  
+  @keyframes linkAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Rest of the styles... */
+  
+  .register-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .register-input:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  .register-btn {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .register-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Add loading animation */
+  .register-form.loading .register-btn::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 3px solid #fff;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin-left: 10px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

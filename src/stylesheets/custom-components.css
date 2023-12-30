@@ -1,0 +1,54 @@
+.card {
+  background: linear-gradient(135deg, #3498db, #2ecc71); /* Gradient background */
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.421);
+  padding: 20px;
+  border-radius: 8px;
+  animation: cardAnimation 1s ease-in-out; /* Add a card animation */
+}
+
+@keyframes cardAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loader-parent {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.697); /* Gradient background for loader-parent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+.loader {
+  height: 80px;
+  width: 80px;
+  border: 5px solid var(--primary);
+  border-radius: 50%;
+  border-top-color: var(--secondary);
+  animation: loader-anim 1s linear infinite;
+}
+
+table {
+  border: 1px solid #cdcdcd;
+}
+
+.br-3 {
+  border-radius: 3px;
+}
+
+@keyframes loader-anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

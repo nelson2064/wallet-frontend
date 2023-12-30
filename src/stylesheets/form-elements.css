@@ -1,0 +1,45 @@
+/* Apply linear gradient background to the body or container */
+body {
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+}
+
+/* Apply animation to the input, select, and textarea */
+input, select, textarea {
+    border: 1px solid rgb(86, 86, 86);
+    padding: 8px 10px;
+    width: 100%;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus, select:focus, textarea:focus {
+    border: 1px solid rgb(34, 34, 34);
+    outline: none;
+}
+
+/* Apply animation to the primary-contained-btn */
+.primary-contained-btn {
+    background-color: var(--primary);
+    color: white;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.primary-contained-btn:hover {
+    background-color: /* Your hover color */;
+}
+
+/* Apply animation to the primary-outlined-btn */
+.primary-outlined-btn {
+    background-color: white;
+    color: var(--primary);
+    padding: 8px 20px;
+    text-transform: uppercase;
+    border: 1px solid var(--primary);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.primary-outlined-btn:hover {
+    background-color: var(--primary);
+    color: white;
+}
